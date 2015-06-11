@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>simplezoom Demo | inwebson.com</title> 
+<meta name="description" content="simplezoom.js is a simple responsive image lightbox jQuery plugin for your blog"/>
+<link rel="shortcut icon" href="http://www.inwebson.com/wp-content/themes/iws/favicon.ico" type="image/x-icon">
+<link rel="icon" href="http://www.inwebson.com/wp-content/themes/iws/favicon.ico" type="image/x-icon">
+<link href='css/vendor.css' rel='stylesheet'>
+<link href='css/application.css' rel='stylesheet'>
+<link href='../dist/simplezoom.css' rel='stylesheet'>
+</head>
+<body>
+<div class="site-content">
+	<div class="container container-sm">
+		<header class="header-group text-center">
+			<h1>simplezoom.js</h1>
+			<h2>Responsive Image Lightbox jQuery Plugin</h2>
+		</header>
+
+		<div class="content">
+			<p><a href="http://www.inwebson.com/demo/simplezoom/demo/images/full/look-at-this.jpg" rel="simplezoom"><img src="images/thumb/look-at-this.jpg" alt="Look at this" class="thumbnail align-left" /></a>Sed dolor nascetur, pid dolor. Turpis pulvinar porttitor! Placerat augue nisi aliquet etiam magnis vut. Dis habitasse, mauris et a adipiscing mauris nisi pid enim, parturient porta magna augue porttitor nunc cursus habitasse. Pid! Eros mid, pulvinar. Parturient montes! Magna. Vel! Ut. Urna ridiculus elementum, lacus augue eros. Scelerisque, cum, platea sociis? In aliquam! Urna! Nisi ut aenean pid placerat.</p>
+
+			<p><a href="http://www.inwebson.com/demo/simplezoom/demo/images/full/green-giant-london.jpg" rel="simplezoom"><img src="images/thumb/green-giant-london.jpg" alt="Green giant london" class="thumbnail align-middle" /></a><br>Nascetur elit, a et eros enim quis odio, nisi in porta velit sagittis, mattis nascetur mattis in augue platea! Dapibus placerat urna turpis magna, a vut tincidunt? Amet porttitor mauris? Rhoncus scelerisque sagittis sit pid? Ut proin amet vel? Dapibus quis et scelerisque a, scelerisque, elementum cursus sociis pulvinar tincidunt ac facilisis porttitor tincidunt sagittis montes! Egestas facilisis sit massa.</p>
+
+			<p><a href="http://www.inwebson.com/demo/simplezoom/demo/images/full/bright-faces.jpg" rel="simplezoom"><img src="images/thumb/bright-faces.jpg" alt="Bright faces" class="thumbnail align-right" /></a>Auctor, montes integer ultricies pulvinar integer, amet pellentesque, adipiscing, ut phasellus? Habitasse! Nascetur a? Lectus pid, non in non, et non amet arcu, pid mauris et? Dapibus in et. Arcu in! Habitasse aenean auctor proin mauris in enim odio nascetur dictumst vut dis velit quis lorem porttitor pulvinar cursus cum auctor sit nec turpis nec. Aliquam dis auctor vel.</p>
+	
+			<h4>Gallery</h4>
+			<p class="gallery">
+				<a href="http://www.inwebson.com/demo/simplezoom/demo/images/full/bright-faces.jpg" rel="simplezoom"><img src="images/thumb/bright-faces.jpg" alt="Bright faces" class="thumbnail" /></a>
+				<a href="http://www.inwebson.com/demo/simplezoom/demo/images/full/arthouse-camden.jpg" rel="simplezoom"><img src="images/thumb/arthouse-camden.jpg" alt="Arthouse Camden" class="thumbnail" /></a>
+				<a href="http://www.inwebson.com/demo/simplezoom/demo/images/full/arthouse-london.jpg" rel="simplezoom"><img src="images/thumb/arthouse-london.jpg" alt="Arthouse London" class="thumbnail" /></a>
+				<a href="http://www.inwebson.com/demo/simplezoom/demo/images/full/captain-america.jpg" rel="simplezoom"><img src="images/thumb/captain-america.jpg" alt="Captain America" class="thumbnail" /></a>
+				<a href="http://www.inwebson.com/demo/simplezoom/demo/images/full/high-line-nyc.jpg" rel="simplezoom"><img src="images/thumb/high-line-nyc.jpg" alt="NYC" class="thumbnail" /></a>
+				<a href="http://www.inwebson.com/demo/simplezoom/demo/images/full/green-giant-london.jpg" rel="simplezoom"><img src="images/thumb/green-giant-london.jpg" alt="Green giant" class="thumbnail" /></a>
+			</p>
+
+			<p class="credit">Special thanks to <a href="#">ISO Republic</a> for providing all these beautiful pictures.</p>
+		</div>
+
+		<div class="plugin-content">
+			<h2>Plugin Options</h2>
+			<p>
+				<strong>classie</strong>
+				<span>Extra CSS classes added to created element. </span>
+				<i>classie: ''</i>
+			</p>
+			<p>
+				<strong>offset</strong>
+				<span>Minimum spacing between user screen and lightbox image.</span>
+				<i>offset: 40</i>
+			</p>
+			<p>
+				<strong>scrollclose</strong>
+				<span>Automatic close the lightbox once user scroll the page.</span>
+				<i>scrollclose: true</i>
+			</p>
+			<p>
+				<strong>imgclass</strong>
+				<span>Tell the plugin where to look for the original image. Default to <code>img</code> element.</span>
+				<i>imgclass: 'img'</i>
+			</p>
+			<p>
+				<strong>duration</strong>
+				<span>The speed of zoom animation, value in millisecond. Default will use the CSS properties.</span>
+				<span class="alert">Not recommended to set this unless you really have no idea on how to set it in CSS.</span>
+				<i>duration: 0</i>
+			</p>
+			<p>
+				<strong>modalTmpl</strong>
+				<span>Overwrite the default lightbox HTML. Refer to plugin <code>TEMPLATE</code> variable for guidance.</span>
+				<i>modalTmpl: null</i>
+			</p>
+			<p>
+				<strong>loaderTmpl</strong>
+				<span>Overwirte the default ligthbox loader HTML. Refer to plugin <code>LOADER</code> variable for guidance.</span>
+				<i>loaderTmpl: null</i>
+			</p>
+			<h2>Plugin Events</h2>
+			<p>
+				<strong>onModalInit</strong>
+				<span>Trigger when user click on the image element.</span>
+			</p>
+			<p>
+				<strong>onModalClosed</strong>
+				<span>Trigger when user close the lightbox.</span>
+			</p>
+			<p>
+				<strong>onImageLoaded</strong>
+				<span>Trigger when larger version of image successful loaded.</span>
+			</p>
+			<p>
+				<strong>onImageError</strong>
+				<span>Trigger when larger version of image failed to loaded.</span>
+			</p>
+		</div>
+
+		<footer class="footer-group content text-center">
+			<h4>Visit plugin page on<meta name="description" content="BlocksIt.js jQuery plugin page by inWebson.com - Dynamic Grid Layout jQuery Plugin"/></h4> 
+			<p><a href="http://www.inwebson.com/simplezoomjs/">inwebson.com</a></p>
+			<p><a href="#">Github</a></p>
+		</footer>
+	</div>
+</div>
+<script src="vendor/js/tracking.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="../dist/simplezoom.min.js"></script>
+<script>
+$('a[rel=simplezoom]').simplezoom();
+</script>
+</body>
+</html>

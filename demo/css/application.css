@@ -1,0 +1,101 @@
+a[rel=simplyzoom]{
+	border: none;
+	cursor: -webkit-zoom-in;
+	cursor: -moz-zoom-in;
+	cursor: zoom-in;
+}
+
+/*
+* content style
+*/
+.content{
+	font-size: 20px;
+	line-height: 1.75;
+}
+.content img{
+	max-width: 100%;
+}
+.content h4{
+	font-size: 28px;
+	margin-bottom: 10px;
+}
+.content .gallery img{
+	width: 32%;
+	margin: 0 0 5px;
+	vertical-align: top;
+}
+.header-group{
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+.credit{
+	font-weight: 400;
+	text-align: center;
+}
+.thumbnail{
+	display: inline-block;
+	margin: 10px 0;
+}
+.thumbnail.align-middle{
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+.thumbnail.align-left{
+	float: left;
+	margin-right: 20px;
+}
+.thumbnail.align-right{
+	float: right;
+	margin-left: 20px;
+}
+@media (max-width: 767px) {
+	.content img{
+		width: 100%;
+	}
+}
+
+
+/*
+* plugin options content
+*/
+.plugin-content{
+	padding: 30px;
+	margin: 50px 0;
+	background-color: #eee;
+}
+.plugin-content > h2{
+	margin-top: 0;
+	margin-bottom: 10px;
+	color: #999;
+}
+.plugin-content > p:last-child{
+	margin-bottom: 0;
+}
+.plugin-content > p > *{
+	display: block;
+}
+.plugin-content > p > i{
+	display: inline-block;
+	font-style: normal;
+	font-size: .85em;
+	color: #666;
+	background-color: #ddd;
+	padding: 1px 8px;
+	margin-top: 3px;
+}
+.plugin-content .alert{
+	font-size: .85em;
+	color: #F48D07;
+}
+
+/*
+* page footer
+*/
+.footer-group{
+	margin: 40px 0;
+	font-weight: 400;
+}
+.footer-group h4{
+	margin-bottom: 30px;
+}
