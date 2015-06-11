@@ -1,6 +1,7 @@
 ## Summary
 
-A simple image lightbox jQuery plugin which inspired from Medium website. 
+A simple image lightbox jQuery plugin which inspired from Medium website.  
+Plugin demo URL: http://www.inwebson.com/demo/simplezoom/demo/
 
 
 #### How to use
@@ -60,4 +61,5 @@ $('.lightbox').simplezoom({
 
 #### Change Log
 
-V 1.0.0 - Yes, it is first release. *4th Jun 2015*
+**V 1.0.0 - 4th Jun 2015**  
+Yes, it is first release.
