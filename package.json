@@ -7,13 +7,13 @@
     "email": "kennyooi@inwebson.com",
     "web": "http://www.inwebson.com/"
   },
-  "homepage": "http://www.inwebson.com/",
+  "homepage": "http://www.inwebson.com/simeplezoomjs",
   "scripts": {
     "start": "grunt"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/"
+    "url": "https://github.com/kennyooi/simplezoom"
   },
   "devDependencies": {
     "grunt": "~0.4.5",
